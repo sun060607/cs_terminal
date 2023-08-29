@@ -8,6 +8,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace example2
 {
@@ -213,6 +214,98 @@ namespace example2
             catch
             {
 
+            }
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            string namo = textBox7.Text;
+            string age = textBox8.Text;
+            string gender = textBox9.Text;
+
+            textBox7.Text = "";
+            textBox8.Text = "";
+            textBox9.Text = "";
+
+            ListViewItem lvi = new ListViewItem();
+
+            lvi.Text = namo;
+            lvi.SubItems.Add(age);
+            lvi.SubItems.Add(gender);
+
+            listView1.Items.Add(lvi);
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //리스트뷰에서 뭔가를 선택했다
+            //listView1.SelectedItems[0].SubItems[0] : 이름
+            //listView1.SelectedItems[1].SubItems[1] : 나이
+            //listView1.SelectedItems[2].SubItems[2] : 성별
+            try
+            {
+                textBox7.Text = listView1.SelectedItems[0].SubItems[0].Text;
+                textBox8.Text = listView1.SelectedItems[0].SubItems[1].Text;
+                textBox9.Text = listView1.SelectedItems[0].SubItems[2].Text;
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            //선택이 되었냐 안되었냐?
+            if(listView1.SelectedIndices.Count > 0)
+            {
+                listView1.Items.RemoveAt(listView1.SelectedIndices[0]);
+            }
+        }
+
+        private void hScrollBar1_Scroll(object sender, ScrollEventArgs e)
+        {
+            label11.Text = hScrollBar1.Value + "%";
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            label13.Text = trackBar1.Value + "%";
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            button19.BackColor = Color.FromArgb(255, 0, 0);
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            button19.BackColor = Color.FromArgb(0, 0, 255);
+        }
+
+        private void trackBar2_Scroll(object sender, EventArgs e)
+        {
+            label14.Text = trackBar2.Value + "%";
+            button19.BackColor = Color.FromArgb(0, 0, trackBar2.Value);
+        }
+
+        private void trackBar3_Scroll(object sender, EventArgs e)
+        {
+            label15.Text = trackBar3.Value + "%";
+            button19.BackColor = Color.FromArgb(0, trackBar3.Value, 0);
+        }
+
+        private void trackBar4_Scroll(object sender, EventArgs e)
+        {
+            label16.Text = trackBar4.Value + "%";
+            button19.BackColor = Color.FromArgb(trackBar4.Value, 0, 0);
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            if(colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                button19.BackColor = colorDialog1.Color;
             }
         }
     }
