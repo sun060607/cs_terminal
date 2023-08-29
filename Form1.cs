@@ -128,5 +128,37 @@ namespace example2
                 label5.Text = "체크 되지 않았습니다";
             }
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            //추가 버튼을 클릭했다
+            //listbox1에 대입한다
+            listBox1.Items.Add(textBox5.Text);
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //사용자가 항목중에 뭔가를 선택했다
+            //listBox1.Selectedlndex
+            //listBox1.Selectedtem
+            label6.Text = listBox1.SelectedItem.ToString();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            //사용자가 listbox에서 뭔가를 선택했나 안했냐
+            if(listBox1.SelectedIndex != -1)
+            {
+                //선택했다
+                listBox1.Items.Add(listBox1.SelectedItem);
+                //listbox1에 선택되어있던것은 삭제한다
+                listBox1.Items.Remove(listBox1.SelectedIndex)
+            }
+            else
+            {
+                //선택안했다
+                MessageBox.Show("선택해주세요");
+            }
+        }
     }
 }
