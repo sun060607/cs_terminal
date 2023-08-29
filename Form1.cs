@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -147,17 +148,71 @@ namespace example2
         private void button11_Click(object sender, EventArgs e)
         {
             //사용자가 listbox에서 뭔가를 선택했나 안했냐
-            if(listBox1.SelectedIndex != -1)
-            {
-                //선택했다
-                listBox1.Items.Add(listBox1.SelectedItem);
-                //listbox1에 선택되어있던것은 삭제한다
-                listBox1.Items.Remove(listBox1.SelectedIndex)
+            try {
+                if (listBox1.SelectedIndex != -1)
+                {
+                    //선택했다
+                    listBox2.Items.Add(listBox1.SelectedItem);
+                    //listbox1에 선택되어있던것은 삭제한다
+                    //listBox1.Items.Remove(listBox1.SelectedItems);
+                    //listBox1.Items.Remove(listBox1.SelectedItem);
+                    listBox1.Items.RemoveAt(listBox1.SelectedIndex);
+                }
+                else
+                {
+                    //선택안했다
+                    MessageBox.Show("선택해주세요");
+                }
+
+
             }
-            else
+            catch
             {
-                //선택안했다
-                MessageBox.Show("선택해주세요");
+
+            }
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(comboBox1.SelectedIndex != -1)
+            {
+                label7.Text = comboBox1.SelectedItem.ToString();
+            }
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            comboBox1.Items.Add(textBox6.Text);
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            //원래있던 내용을 삭제한다
+            comboBox1.Items.Clear();
+            string[] animals = { "호랑이", "사자", "곰" };
+            comboBox1.Items.AddRange(animals);
+            //comboBox1.Items.ad
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            //사용자가 listbox에서 뭔가를 선택했나 안했냐
+            try
+            {
+                if (listBox2.SelectedIndex != -1)
+                {
+                    listBox1.Items.Add(listBox2.SelectedItem);
+                    listBox2.Items.RemoveAt(listBox2.SelectedIndex);
+                }
+                else
+                {
+                    MessageBox.Show("선택해주세요");
+                }
+            }
+            catch
+            {
+
             }
         }
     }
