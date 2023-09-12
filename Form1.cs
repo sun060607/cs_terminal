@@ -5,10 +5,11 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+//using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace example2
 {
@@ -416,7 +417,9 @@ namespace example2
                 textBox10.Text += "9";
             }
         }
-
+        double num1 = 0;
+        int num2 = 0;
+        int num3 = 0;
         private void button30_Click(object sender, EventArgs e)
         {
             if (textBox10.Text == "0")
@@ -427,6 +430,207 @@ namespace example2
             {
                 textBox10.Text += "0";
             }
+        }
+        private void button35_Click(object sender, EventArgs e)
+        {
+            if(num3 == 0)
+            {
+                num1 = double.Parse(textBox10.Text);
+                textBox10.Text = "";
+                num2 = 1;
+                num3 = 1;
+            }else if(num3 == 1)
+            {
+                if (num2 == 1)
+                {
+                    num1 += double.Parse(textBox10.Text);
+                }
+                else if (num2 == 2)
+                {
+                    num1 -= double.Parse(textBox10.Text);
+                }
+                else if (num2 == 3)
+                {
+                    num1 *= double.Parse(textBox10.Text);
+                }
+                else if (num2 == 4)
+                {
+                    num1 /= double.Parse(textBox10.Text);
+                }
+                textBox10.Text = "";
+                num2 = 1;
+            }
+        }
+
+        private void button31_Click(object sender, EventArgs e)
+        {
+            
+            if(num2 == 1)
+            {
+                num1 += double.Parse(textBox10.Text);
+            }else if(num2 == 2)
+            {
+                num1 -= double.Parse(textBox10.Text);
+            }else if(num2 == 3)
+            {
+                num1 *= double.Parse(textBox10.Text);
+            }else if(num2 == 4)
+            {
+                num1 /= double.Parse(textBox10.Text);
+            }
+            textBox10.Text = num1.ToString();
+            num3 = 0;
+        }
+
+        private void button34_Click(object sender, EventArgs e)
+        {
+            if (num3 == 0)
+            {
+                num1 = double.Parse(textBox10.Text);
+                textBox10.Text = "";
+                num2 = 2;
+                num3 = 1;
+            }
+            else if (num3 == 1)
+            {
+                if (num2 == 1)
+                {
+                    num1 += double.Parse(textBox10.Text);
+                }
+                else if (num2 == 2)
+                {
+                    num1 -= double.Parse(textBox10.Text);
+                }
+                else if (num2 == 3)
+                {
+                    num1 *= double.Parse(textBox10.Text);
+                }
+                else if (num2 == 4)
+                {
+                    num1 /= double.Parse(textBox10.Text);
+                }
+                textBox10.Text = "";
+                num2 = 2;
+            }
+        }
+
+        private void button33_Click(object sender, EventArgs e)
+        {
+            if (num3 == 0)
+            {
+                num1 = double.Parse(textBox10.Text);
+                textBox10.Text = "";
+                num2 = 3;
+                num3 = 1;
+            }
+            else if (num3 == 1)
+            {
+                if (num2 == 1)
+                {
+                    num1 += double.Parse(textBox10.Text);
+                }
+                else if (num2 == 2)
+                {
+                    num1 -= double.Parse(textBox10.Text);
+                }
+                else if (num2 == 3)
+                {
+                    num1 *= double.Parse(textBox10.Text);
+                }
+                else if (num2 == 4)
+                {
+                    num1 /= double.Parse(textBox10.Text);
+                }
+                textBox10.Text = "";
+                num2 = 3;
+            }
+        }
+
+        private void button32_Click(object sender, EventArgs e)
+        {
+            if (num3 == 0)
+            {
+                num1 = double.Parse(textBox10.Text);
+                textBox10.Text = "";
+                num2 = 4;
+                num3 = 1;
+            }
+            else if (num3 == 1)
+            {
+                if (num2 == 1)
+                {
+                    num1 += double.Parse(textBox10.Text);
+                }
+                else if (num2 == 2)
+                {
+                    num1 -= double.Parse(textBox10.Text);
+                }
+                else if (num2 == 3)
+                {
+                    num1 *= double.Parse(textBox10.Text);
+                }
+                else if (num2 == 4)
+                {
+                    num1 /= double.Parse(textBox10.Text);
+                }
+                textBox10.Text = "";
+                num2 = 4;
+            }
+        }
+
+        private void button36_Click(object sender, EventArgs e)
+        {
+            num1 = 0;
+            num2 = 0;
+            num3 = 0;
+            textBox10.Text = "0";
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            button21.MouseEnter += my_MouseEnter;
+            button21.MouseLeave += my_MouseLeave;
+            button22.MouseEnter += my_MouseEnter;
+            button22.MouseLeave += my_MouseLeave;
+            button23.MouseEnter += my_MouseEnter;
+            button23.MouseLeave += my_MouseLeave;
+            button24.MouseEnter += my_MouseEnter;
+            button24.MouseLeave += my_MouseLeave;
+            button25.MouseEnter += my_MouseEnter;
+            button25.MouseLeave += my_MouseLeave;
+            button26.MouseEnter += my_MouseEnter;
+            button26.MouseLeave += my_MouseLeave;
+            button27.MouseEnter += my_MouseEnter;
+            button27.MouseLeave += my_MouseLeave;
+            button28.MouseEnter += my_MouseEnter;
+            button28.MouseLeave += my_MouseLeave;
+            button29.MouseEnter += my_MouseEnter;
+            button29.MouseLeave += my_MouseLeave;
+            button30.MouseEnter += my_MouseEnter;
+            button30.MouseLeave += my_MouseLeave;
+            button31.MouseEnter += my_MouseEnter;
+            button31.MouseLeave += my_MouseLeave;
+            button32.MouseEnter += my_MouseEnter;
+            button32.MouseLeave += my_MouseLeave;
+            button33.MouseEnter += my_MouseEnter;
+            button33.MouseLeave += my_MouseLeave;
+            button34.MouseEnter += my_MouseEnter;
+            button34.MouseLeave += my_MouseLeave;
+            button35.MouseEnter += my_MouseEnter;
+            button35.MouseLeave += my_MouseLeave;
+            button36.MouseEnter += my_MouseEnter;
+            button36.MouseLeave += my_MouseLeave;
+        }
+
+        private void my_MouseEnter(object sender, EventArgs e)
+        {
+            Button b = sender as Button;
+            b.BackColor =Color.Red;
+        }
+        private void my_MouseLeave(object sender, EventArgs e)
+        {
+            Button b = sender as Button;
+            b.BackColor = SystemColors.Control;
         }
     }
 }

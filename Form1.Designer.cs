@@ -95,6 +95,7 @@
             this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.button36 = new System.Windows.Forms.Button();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.button35 = new System.Windows.Forms.Button();
             this.button34 = new System.Windows.Forms.Button();
@@ -112,6 +113,7 @@
             this.button22 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.button37 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
@@ -835,6 +837,8 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.button37);
+            this.tabPage4.Controls.Add(this.button36);
             this.tabPage4.Controls.Add(this.textBox10);
             this.tabPage4.Controls.Add(this.button35);
             this.tabPage4.Controls.Add(this.button34);
@@ -858,6 +862,16 @@
             this.tabPage4.Text = "tabPage4";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // button36
+            // 
+            this.button36.Location = new System.Drawing.Point(129, 193);
+            this.button36.Name = "button36";
+            this.button36.Size = new System.Drawing.Size(75, 23);
+            this.button36.TabIndex = 16;
+            this.button36.Text = "c";
+            this.button36.UseVisualStyleBackColor = true;
+            this.button36.Click += new System.EventHandler(this.button36_Click);
+            // 
             // textBox10
             // 
             this.textBox10.Location = new System.Drawing.Point(129, 57);
@@ -875,6 +889,7 @@
             this.button35.TabIndex = 14;
             this.button35.Text = "+";
             this.button35.UseVisualStyleBackColor = true;
+            this.button35.Click += new System.EventHandler(this.button35_Click);
             // 
             // button34
             // 
@@ -884,6 +899,7 @@
             this.button34.TabIndex = 13;
             this.button34.Text = "-";
             this.button34.UseVisualStyleBackColor = true;
+            this.button34.Click += new System.EventHandler(this.button34_Click);
             // 
             // button33
             // 
@@ -893,6 +909,7 @@
             this.button33.TabIndex = 12;
             this.button33.Text = "*";
             this.button33.UseVisualStyleBackColor = true;
+            this.button33.Click += new System.EventHandler(this.button33_Click);
             // 
             // button32
             // 
@@ -902,6 +919,7 @@
             this.button32.TabIndex = 11;
             this.button32.Text = "/";
             this.button32.UseVisualStyleBackColor = true;
+            this.button32.Click += new System.EventHandler(this.button32_Click);
             // 
             // button31
             // 
@@ -911,6 +929,7 @@
             this.button31.TabIndex = 10;
             this.button31.Text = "=";
             this.button31.UseVisualStyleBackColor = true;
+            this.button31.Click += new System.EventHandler(this.button31_Click);
             // 
             // button30
             // 
@@ -1012,6 +1031,15 @@
             this.button21.UseVisualStyleBackColor = true;
             this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
+            // button37
+            // 
+            this.button37.Location = new System.Drawing.Point(532, 153);
+            this.button37.Name = "button37";
+            this.button37.Size = new System.Drawing.Size(180, 170);
+            this.button37.TabIndex = 17;
+            this.button37.Text = "test";
+            this.button37.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -1021,6 +1049,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "나의 첫번째 원폼";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
@@ -1127,6 +1156,8 @@
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button button36;
+        private System.Windows.Forms.Button button37;
     }
 }
 
