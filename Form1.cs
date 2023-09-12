@@ -308,5 +308,125 @@ namespace example2
                 button19.BackColor = colorDialog1.Color;
             }
         }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            if(textBox10.Text == "0")
+            {
+                textBox10.Text = "1";
+            }
+            else
+            {
+                textBox10.Text += "1";
+            }
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            if (textBox10.Text == "0")
+            {
+                textBox10.Text = "2";
+            }
+            else
+            {
+                textBox10.Text += "2";
+            }
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            if (textBox10.Text == "0")
+            {
+                textBox10.Text = "3";
+            }
+            else
+            {
+                textBox10.Text += "3";
+            }
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            if (textBox10.Text == "0")
+            {
+                textBox10.Text = "4";
+            }
+            else
+            {
+                textBox10.Text += "4";
+            }
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            if (textBox10.Text == "0")
+            {
+                textBox10.Text = "5";
+            }
+            else
+            {
+                textBox10.Text += "5";
+            }
+        }
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            if (textBox10.Text == "0")
+            {
+                textBox10.Text = "6";
+            }
+            else
+            {
+                textBox10.Text += "6";
+            }
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+            if (textBox10.Text == "0")
+            {
+                textBox10.Text = "7";
+            }
+            else
+            {
+                textBox10.Text += "7";
+            }
+        }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+            if (textBox10.Text == "0")
+            {
+                textBox10.Text = "8";
+            }
+            else
+            {
+                textBox10.Text += "8";
+            }
+        }
+
+        private void button29_Click(object sender, EventArgs e)
+        {
+            if (textBox10.Text == "0")
+            {
+                textBox10.Text = "9";
+            }
+            else
+            {
+                textBox10.Text += "9";
+            }
+        }
+
+        private void button30_Click(object sender, EventArgs e)
+        {
+            if (textBox10.Text == "0")
+            {
+                textBox10.Text = "0";
+            }
+            else
+            {
+                textBox10.Text += "0";
+            }
+        }
     }
 }
