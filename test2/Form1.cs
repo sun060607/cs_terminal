@@ -112,6 +112,19 @@ namespace test2
             string data = serialPort3.ReadLine();
             richTextBox1.Text += data + "\n";
             label3.Text = data;
+            float sensor = float.Parse(data);
+            //data
+            aGauge1.Value = float.Parse(data);
+            //그래프에 값을 입력해준다
+            //만약 현재 그래프에 있느 포인트이 갯수가 20보다 크다면
+            //제일 첫번째로 입력되었던 포인트는 삭제 한다
+            if (chart1.Series[0].Points.Count > 20)
+            {
+                chart1.Series[0].Points.RemoveAt(0);
+            }
+            chart1.Series[0].Points.Add(sensor);
+
+
         }
     }
 }

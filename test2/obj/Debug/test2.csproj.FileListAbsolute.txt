@@ -9,3 +9,5 @@ C:\Users\sung0\Desktop\C#\test2\obj\Debug\test2.csproj.GenerateResource.cache
 C:\Users\sung0\Desktop\C#\test2\obj\Debug\test2.csproj.CoreCompileInputs.cache
 C:\Users\sung0\Desktop\C#\test2\obj\Debug\test2.exe
 C:\Users\sung0\Desktop\C#\test2\obj\Debug\test2.pdb
+C:\Users\sung0\Desktop\C#\test2\bin\Debug\AGauge.dll
+C:\Users\sung0\Desktop\C#\test2\obj\Debug\test2.csproj.CopyComplete
