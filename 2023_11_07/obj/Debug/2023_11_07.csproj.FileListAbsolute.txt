@@ -1,0 +1,16 @@
+C:\Users\sung0\Desktop\C#\2023_11_07\bin\Debug\2023_11_07.exe.config
+C:\Users\sung0\Desktop\C#\2023_11_07\bin\Debug\2023_11_07.exe
+C:\Users\sung0\Desktop\C#\2023_11_07\bin\Debug\2023_11_07.pdb
+C:\Users\sung0\Desktop\C#\2023_11_07\bin\Debug\M2Mqtt.Net.dll
+C:\Users\sung0\Desktop\C#\2023_11_07\bin\Debug\M2Mqtt.Net.pdb
+C:\Users\sung0\Desktop\C#\2023_11_07\obj\Debug\2023_11_07.csproj.AssemblyReference.cache
+C:\Users\sung0\Desktop\C#\2023_11_07\obj\Debug\2023_11_07.csproj.SuggestedBindingRedirects.cache
+C:\Users\sung0\Desktop\C#\2023_11_07\obj\Debug\_2023_11_07.Form1.resources
+C:\Users\sung0\Desktop\C#\2023_11_07\obj\Debug\_2023_11_07.Properties.Resources.resources
+C:\Users\sung0\Desktop\C#\2023_11_07\obj\Debug\2023_11_07.csproj.GenerateResource.cache
+C:\Users\sung0\Desktop\C#\2023_11_07\obj\Debug\2023_11_07.csproj.CoreCompileInputs.cache
+C:\Users\sung0\Desktop\C#\2023_11_07\obj\Debug\2023_11_07.csproj.CopyComplete
+C:\Users\sung0\Desktop\C#\2023_11_07\obj\Debug\2023_11_07.exe
+C:\Users\sung0\Desktop\C#\2023_11_07\obj\Debug\2023_11_07.pdb
+C:\Users\sung0\Desktop\C#\2023_11_07\bin\Debug\Newtonsoft.Json.dll
+C:\Users\sung0\Desktop\C#\2023_11_07\bin\Debug\Newtonsoft.Json.xml
